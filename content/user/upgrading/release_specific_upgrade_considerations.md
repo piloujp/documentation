@@ -18,13 +18,15 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
 - Another part of staying up to date is keeping your PHP version current. As you do this, you may need to address various [common issues with PHP version incompatibility](/user/upgrading/php_warnings/).
 
+- [Convert your database to UTF8MB4](/user/upgrading/convert_to_utf8/), if you haven't already done so.
+
 - Be sure external links are constructed with `rel="noreferrer noopener"`.
 
 - If you use a custom template, check it against [the template changes list](/user/template/template_changes/). 
 
 - Do an [accessibility review](/user/accessibility/accessibility/) of your site.  This is especially important if you use template other than [Bootstrap](/user/template/bootstrap/), since many older templates were not built to be accessible.
 
-### Zen Cart 2.1.0 :stop_sign: <font color="red">NOT RELEASED YET</font> :stop_sign:
+### Zen Cart 2.1.0 
 
 - Improvements were made to the encapsulated plugin manager to permit storefront plugins to do more.  If you need to backport these changes to 2.0.1 or 2.0.0 (say, to run [POSM](/user/running/posm/) on those versions), see https://gist.github.com/lat9/9deb64d3325081d18bb0db5534bcf142.
 - `tpl_{product-type-page}_display.php` files have been consolidated.  If you use product types other than "product general" and require special behavior for a specific product type, you will need to override the appropriate file. 
