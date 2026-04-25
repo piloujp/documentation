@@ -27,10 +27,6 @@ The following integrations are highly recommended and well supported by their au
 - [Authorize.net CIM](https://www.zen-cart.com/downloads.php?do=file&id=2272)
 - [Helcim](https://www.zen-cart.com/downloads.php?do=file&id=2402)
 - [Square](/user/payment/square/)
-
-Other options are: 
-- [Braintree](https://www.zen-cart.com/downloads.php?do=file&id=1781)
-- [NMI Gateway Processing Service-GPS Payment Module](https://www.zen-cart.com/downloads.php?do=file&id=2265)
 - [Stripe](https://www.zen-cart.com/downloads.php?do=file&id=1548)
 
 Some offline payment methods are also available: 

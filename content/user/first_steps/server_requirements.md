@@ -8,7 +8,7 @@ weight: 10
 
 *Minimum* server requirements:  
 
-*   Zen Cart operates on a standard "LAMP" stack: PHP, Apache, MySQL.
+*   Zen Cart operates on a standard "LAMP" stack: Linux, Apache, MySQL, PHP.
 *   Zen Cart is designed to be run on a Linux server.
 *   See the detailed version-compatibility details in the sections below.
 *   Keep in mind that for security compliance, you should always use a PCI Compliant version of each of these required software components, including using a Zen Cart version that's compatible with those software component versions.
@@ -27,11 +27,11 @@ The following list shows the PHP versions compatible with each version of Zen Ca
 Please note that the  lower versions of PHP in a supported range are only intended to allow you to get through the upgrade process more easily.  The goal should be to use the highest version of PHP supported by your version, since it will have the most current fixes and security patches.
 
 *   <font color="#ff0000">**Zen Cart v3.0.x** (IN DEVELOPMENT) is being designed for PHP 8.3 through PHP 8.5</font> (and probably 8.6)<br>
-*   <font color="#ff0000">**Zen Cart v2.2.x** is designed for PHP 8.2 through PHP 8.5</font><br>
-*   <font color="#ff0000">**Zen Cart v2.1.x** is designed for PHP 8.0 through PHP 8.3</font> (v2.1.0 WILL trigger some deprecation messages on PHP 8.4)<br>
-*   <font color="#ff0000">**Zen Cart v2.0.x** is designed for PHP 8.0 through PHP 8.3</font> (v2.0.x and older WILL trigger errors on PHP 8.4)<br>
-*   <font color="#ff0000">**Zen Cart v1.5.8** (latest version: 1.5.8a) is designed for PHP 7.3 through PHP 8.3 (with PHP 8.1 recommended, and PHP 8.2 or less required for `zc_install`)</font><br>
-*   **Zen Cart v1.5.7** (latest version: 1.5.7d) is designed for PHP 5.6 through PHP 8.0 (with PHP 7.4 recommended)<br>
+*   <font color="#ff0000">**Zen Cart v2.2.x** (final version: 2.2.2) is designed for PHP 8.2 through PHP 8.5</font><br>
+*   <font color="#ff0000">**Zen Cart v2.1.x** (final version: 2.1.0) is designed for PHP 8.0 through PHP 8.3</font> (v2.1.0 WILL trigger some deprecation messages on PHP 8.4)<br>
+*   <font color="#ff0000">**Zen Cart v2.0.x** (final version 2.0.1) is designed for PHP 8.0 through PHP 8.3</font> (v2.0.x and older WILL trigger errors on PHP 8.4)<br>
+*   **Zen Cart v1.5.8** (final version: 1.5.8a) is designed for PHP 7.3 through PHP 8.3 (with PHP 8.1 recommended, and PHP 8.2 or less required for `zc_install`)<br>
+*   **Zen Cart v1.5.7** (final version: 1.5.7d) is designed for PHP 5.6 through PHP 8.0 (with PHP 7.4 recommended)<br>
 (If you are using PHP 8.0 with v1.5.7, be sure to [suppress logging duplicate-language definitions](/user/troubleshooting/constant_already_defined/)). 
 *   **Zen Cart v1.5.6** is designed for PHP 5.5 through PHP 7.3
 *   **Zen Cart v1.5.5** is designed for PHP 5.5 through PHP 7.1
