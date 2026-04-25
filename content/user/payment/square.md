@@ -106,6 +106,17 @@ If your access token goes bad, you can get into a state where you have to delete
 ## Square Errors 
 If you get an error from Square (in particular, "The provided OAuth access token has expired"), see [Square Error Messages](/user/payment/square_errors/). 
 
-## ApplePay
+## Square Authorized Representative 
+If you're a Zen Cart contractor (or your business has a contractor who manages your cart), adding an authorized representative to your Square account means you will no longer need to coordinate to handle 2FA prompts.
 
-Remember that ApplePay only works in the Safari browser.  You must also register your domain with Apple Pay for it to work.  See: https://developer.squareup.com/docs/web-payments/apple-pay#production-configuration
+To add an authorized representative to Square, sign in to your Square Dashboard at https://app.squareup.com/dashboard/, go to Settings > Account & Settings > My Business > Security, and select Assign authorized representative to add a new or existing team member.  Note that a specific email address can only be used for one representative account (if you are a developer with multiple clients, you will need to use email aliases or multiple email addresses). 
+
+## Apple Pay
+
+### Installation
+- You must register your domain with Apple Pay for it to work.  See: https://developer.squareup.com/docs/web-payments/apple-pay#production-configuration.  Note that the subdomain `www`, if used, must be specified when you register the domain.  If you register `mysite.com`, but your `configure.php`  file has `HTTP_SERVER` set to `https://www.mysite.com`, you'll get a javascript error saying your domain is not registered.  You should register `www.mysite.com` and be sure your `.htaccess` file normalizes inbound URLs to include `www`.
+
+### Customer Experience 
+- Apple Pay only works in the Safari browser.  
+- Apple Pay will only work with a card in your Apple Wallet.  You may get prompted to use a card that's stored in your browser or password manager, but if it's not in your Apple Wallet, you'll get an error back when you press "Confirm" on the checkout confirmation page.
+
